@@ -33,6 +33,16 @@ Running 1000s of LLMs locally
 4. **Adding Huggingface token**:
     - In the venv terminal type the followin
     - *huggingface-cli login --token INSERT_YOUR_TOKEN --add-git-credentials*
-    
 
 
+## Running models using GPU:
+By default when you run the programm it will display the following in the output
+**Device set to use cpu**
+- To use nvidia-GPUs for this
+    - download and install cudatoolkit
+- To check if it is installed
+    - *nvcc --version* or
+    - *nvidia-smi*
+- install pytorch specifically for GPU
+    - get the link that is appropriate for you in the pytorch page
+    - it creates a combo of installation line based on your device
